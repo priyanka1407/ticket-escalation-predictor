@@ -1,0 +1,380 @@
+{
+  "rows": 10000,
+  "escalation_rate": 0.218,
+  "selected_model": "logistic_regression",
+  "logreg_best_C": 1.0,
+  "min_recall_target": 0.85,
+  "cv": [
+    {
+      "model": "logistic_regression",
+      "roc_auc_mean": 0.932,
+      "pr_auc_mean": 0.812,
+      "f1_mean": 0.716,
+      "roc_auc_std": 0.005,
+      "pr_auc_std": 0.008,
+      "f1_std": 0.007
+    },
+    {
+      "model": "random_forest",
+      "roc_auc_mean": 0.91,
+      "pr_auc_mean": 0.77,
+      "f1_mean": 0.712,
+      "roc_auc_std": 0.007,
+      "pr_auc_std": 0.01,
+      "f1_std": 0.01
+    },
+    {
+      "model": "hist_gradient_boosting",
+      "roc_auc_mean": 0.909,
+      "pr_auc_mean": 0.764,
+      "f1_mean": 0.712,
+      "roc_auc_std": 0.008,
+      "pr_auc_std": 0.009,
+      "f1_std": 0.014
+    },
+    {
+      "model": "dummy_prior",
+      "roc_auc_mean": 0.5,
+      "pr_auc_mean": 0.218,
+      "f1_mean": 0.0,
+      "roc_auc_std": 0.0,
+      "pr_auc_std": 0.0,
+      "f1_std": 0.0
+    }
+  ],
+  "test": {
+    "logistic_regression": {
+      "threshold": 0.524,
+      "roc_auc": 0.93,
+      "pr_auc": 0.824,
+      "precision": 0.649,
+      "recall": 0.831,
+      "f1": 0.729,
+      "brier": 0.1,
+      "tp": 363,
+      "fp": 196,
+      "fn": 74,
+      "tn": 1367
+    },
+    "random_forest": {
+      "threshold": 0.321,
+      "roc_auc": 0.914,
+      "pr_auc": 0.8,
+      "precision": 0.588,
+      "recall": 0.822,
+      "f1": 0.685,
+      "brier": 0.092,
+      "tp": 359,
+      "fp": 252,
+      "fn": 78,
+      "tn": 1311
+    },
+    "hist_gradient_boosting": {
+      "threshold": 0.166,
+      "roc_auc": 0.915,
+      "pr_auc": 0.792,
+      "precision": 0.569,
+      "recall": 0.847,
+      "f1": 0.681,
+      "brier": 0.093,
+      "tp": 370,
+      "fp": 280,
+      "fn": 67,
+      "tn": 1283
+    },
+    "pytorch_mlp": {
+      "threshold": 0.502,
+      "roc_auc": 0.927,
+      "pr_auc": 0.821,
+      "precision": 0.616,
+      "recall": 0.849,
+      "f1": 0.714,
+      "brier": 0.105,
+      "tp": 371,
+      "fp": 231,
+      "fn": 66,
+      "tn": 1332
+    },
+    "rule_based": {
+      "f1": 0.552,
+      "recall": 0.751,
+      "precision": 0.436
+    },
+    "dummy_prior": {
+      "f1": 0.0,
+      "recall": 0.0,
+      "precision": 0.0,
+      "pr_auc": 0.218,
+      "roc_auc": 0.5
+    }
+  },
+  "mlp_history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0191,
+      "val_pr_auc": 0.7411
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7911,
+      "val_pr_auc": 0.758
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6316,
+      "val_pr_auc": 0.7681
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6077,
+      "val_pr_auc": 0.7754
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5865,
+      "val_pr_auc": 0.7887
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5698,
+      "val_pr_auc": 0.7945
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.5601,
+      "val_pr_auc": 0.8039
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.546,
+      "val_pr_auc": 0.8076
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.5338,
+      "val_pr_auc": 0.8125
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.5346,
+      "val_pr_auc": 0.8118
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.5237,
+      "val_pr_auc": 0.8125
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.5219,
+      "val_pr_auc": 0.8092
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.5111,
+      "val_pr_auc": 0.8118
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.5078,
+      "val_pr_auc": 0.8167
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.5122,
+      "val_pr_auc": 0.8141
+    },
+    {
+      "epoch": 16,
+      "train_loss": 0.5071,
+      "val_pr_auc": 0.8156
+    },
+    {
+      "epoch": 17,
+      "train_loss": 0.5019,
+      "val_pr_auc": 0.819
+    },
+    {
+      "epoch": 18,
+      "train_loss": 0.4979,
+      "val_pr_auc": 0.8149
+    },
+    {
+      "epoch": 19,
+      "train_loss": 0.4946,
+      "val_pr_auc": 0.8154
+    },
+    {
+      "epoch": 20,
+      "train_loss": 0.4988,
+      "val_pr_auc": 0.8161
+    },
+    {
+      "epoch": 21,
+      "train_loss": 0.4929,
+      "val_pr_auc": 0.8149
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.4877,
+      "val_pr_auc": 0.8164
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.4914,
+      "val_pr_auc": 0.8142
+    }
+  ],
+  "permutation_importance": [
+    {
+      "feature": "description",
+      "importance": 0.2383
+    },
+    {
+      "feature": "error_code",
+      "importance": 0.0558
+    },
+    {
+      "feature": "log_seen_before",
+      "importance": 0.0353
+    },
+    {
+      "feature": "has_runbook",
+      "importance": 0.0285
+    },
+    {
+      "feature": "l1_experience_months",
+      "importance": 0.0156
+    },
+    {
+      "feature": "customer_tier",
+      "importance": 0.0108
+    },
+    {
+      "feature": "service",
+      "importance": 0.0054
+    },
+    {
+      "feature": "reopened",
+      "importance": 0.0051
+    },
+    {
+      "feature": "channel",
+      "importance": 0.0043
+    },
+    {
+      "feature": "text_length",
+      "importance": 0.0039
+    },
+    {
+      "feature": "is_after_cutoff",
+      "importance": 0.0036
+    },
+    {
+      "feature": "log_customers_affected",
+      "importance": 0.0009
+    },
+    {
+      "feature": "logs_attached",
+      "importance": 0.0006
+    },
+    {
+      "feature": "is_weekend",
+      "importance": 0.0003
+    },
+    {
+      "feature": "is_new_error",
+      "importance": 0.0
+    },
+    {
+      "feature": "log_amount",
+      "importance": -0.0001
+    }
+  ],
+  "logreg_top_terms": {
+    "towards_escalation": [
+      [
+        "text__no known",
+        1.88
+      ],
+      [
+        "text__no",
+        1.88
+      ],
+      [
+        "text__known workaround",
+        1.88
+      ],
+      [
+        "text__reset no",
+        1.77
+      ],
+      [
+        "text__impacted",
+        1.66
+      ],
+      [
+        "text__customer funds",
+        1.66
+      ],
+      [
+        "text__funds",
+        1.66
+      ],
+      [
+        "text__funds impacted",
+        1.66
+      ],
+      [
+        "text__statement urgent",
+        1.58
+      ],
+      [
+        "text__systems kindly",
+        1.52
+      ]
+    ],
+    "towards_l1_resolution": [
+      [
+        "text__applied",
+        -2.53
+      ],
+      [
+        "text__workaround applied",
+        -2.53
+      ],
+      [
+        "text__single",
+        -1.69
+      ],
+      [
+        "text__single customer",
+        -1.69
+      ],
+      [
+        "text__customer affected",
+        -1.69
+      ],
+      [
+        "text__affected",
+        -1.69
+      ],
+      [
+        "text__delay please",
+        -1.3
+      ],
+      [
+        "text__asked for",
+        -1.21
+      ],
+      [
+        "text__for status",
+        -1.21
+      ],
+      [
+        "text__for",
+        -1.21
+      ]
+    ]
+  }
+}
